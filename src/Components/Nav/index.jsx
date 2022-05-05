@@ -7,11 +7,11 @@ export const Nav = () => {
   const routes = [
     {
       name: "Home",
-      path: "/project1",
+      path: "/",
     },
     {
       name: "Redux Project One",
-      path: "/project2",
+      path: "/project1",
     },
     {
         name: "Redux Project Two",
@@ -26,7 +26,7 @@ export const Nav = () => {
       <ul>
         {routes.map((item,index) => {
           return (
-            <li>
+            <li key = {index}>
               <Link className = {index === active ? "active" : null} onClick={() => changeActive(index)} to={item.path}>
                 {item.name}
               </Link>
