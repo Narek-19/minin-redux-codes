@@ -1,9 +1,9 @@
 import React, { useEffect,useState } from "react";
 import {initialState} from "./helper";
-import {createStore} from "./createStore";
-import {taskReducer} from "./taskReducer";
+import { createStore } from "./store/createStore";
+import {taskReducer} from "./store/taskReducer";
 import "./style.scss";
-import { todoUpdate } from "./actionTypes";
+import { todoUpdate } from "./store/actionTypes";
 
   const store = createStore(taskReducer,initialState);
 

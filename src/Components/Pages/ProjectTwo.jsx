@@ -2,8 +2,8 @@ import React from "react";
 
 export const ProjectTwo =()=> {
     return (
-        <div>
-            <h1>ProjectTwo</h1>
-        </div>
-    )
+      <div className="toDo">
+        <h1>Project Two</h1>
+      </div>
+    );
 } 
